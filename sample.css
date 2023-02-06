@@ -1,0 +1,53 @@
+nav{
+    width: 100%;
+    background-color: aquamarine;
+    display: flex;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    float: left;
+    font-weight: 900;
+    font-size: 2rem;
+    text-transform: uppercase;
+    /* border-bottom: 3px solid red; */
+}
+
+.list ul{
+    display: flex;
+    align-items: center;
+}
+.list ul li{
+    float: left;
+    list-style: none;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.list ul li a{
+text-decoration: none;
+}
+
+.list ul li a.active{
+    padding: 10px;
+    background-color: rebeccapurple;
+    color: white;
+}
+
+input[type=text]{
+    padding: 10px;
+    border-radius: 25px;
+    border: 2px solid darkmagenta;
+}
+
+
+input[type=text]:focus{
+    margin-top: 50px;
+    width: 100%;
+    transition: width .4s ease-in-out;
+    padding: 10px;
+    background-color: gainsboro;
+    border-radius: 25px;
+    border: 2px solid darkmagenta;
+}

@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+:root {
+    --bs-primary: #0d6efd;
+    --bs-teal: #20c997;
+    --bs-green: #198754;
+    --bs-cyan: #0dcaf0;
+    --bs-footer: #00306e;
+    --bs-quick: #2e5b95;
+}
+
+/*--------------------------topbar--Start---------------------*/
+.topbar {
+    width: 100%;
+    display: flex;
+    padding: 15px 10px;
+    background-color: #00306e;
+    justify-content: space-between;
+}
+
+.topbar .call a {
+    list-style: none;
+    color: white;
+}
+
+.topbar .call a:hover {
+    color: black;
+    transition: .5s ease;
+}
+
+.topbar .social-top a {
+    margin-left: 15px;
+    list-style: none;
+    color: white;
+}
+
+.topbar .social-top a:hover {
+    color: black;
+    transition: .5s ease;
+}
+
+/*--------------------------topbar--End---------------------*/
+
+
+
+/*--------------------------navbar--Start---------------------*/
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+}
+
+nav .logo {
+    width: 120px;
+    height: 60px;
+}
+
+nav .nav-list a {
+    list-style: none;
+    text-decoration: none;
+    margin-left: 10px;
+    color: #0d6efd
+}
+
+nav .nav-list a:hover {
+    color: black;
+    transition: .5s ease;
+}
+
+/* ----------dropdown--------- */
+
+nav .nav-list .dropdown {
+    float: left;
+}
+
+nav .nav-list .dropdown .drop-btn {
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+nav .nav-list .dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    overflow: auto;
+    background-color: white;
+    min-width: 180px;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+nav .nav-list .dropdown .dropdown-content a {
+    float: none;
+    color: black;
+    display: block;
+}
+
+nav .nav-list .dropdown .dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+nav .nav-list .dropdown:hover .dropdown-content {
+    display: block;
+    padding: 0px 10px;
+    margin-top: 15px;
+}
+
+/*----dorpdown--end----*/
+
+nav .nav-list .allcourses-btn,
+.enquiry-btn {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #00306e;
+    border-radius: 5px;
+    border: none;
+    color: white;
+}
+
+
+/*--------------------------navbar--end---------------------*/
+
+.slider img {
+    width: 100%;
+}
+
+/*--------------------------sec-1--start---------------------*/
+
+
+.sec-1 h3 {
+    margin-top: 20px;
+    text-align: center;
+    align-items: center;
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+.sec-1 .heading {
+    display: flex;
+    background-color: #2e5b95;
+    color: white;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec-1 .flex-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 20px;
+}
+
+
+.sec-1 .flex-box .flex {
+    font-size: .7rem;
+    border: 1px solid black;
+    align-items: center;
+    width: 20rem;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: capitalize;
+    box-shadow: .5px 2px 1px rgb(42, 41, 41);
+}
+
+.sec-1 .flex-box .flex .content {
+    display: flex;
+    text-transform: capitalize;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 10px;
+}
+
+.sec-1 .flex-box .flex .content .list {
+    font-size: .8rem;
+    font-weight: 900;
+}
+
+
+/*--------------------------sec-1--end---------------------*/
+
+
+
+/*--------------------------services--start---------------------*/
+
+
+.sec-2 {
+    margin-top: 20px;
+    padding: 50px 250px;
+}
+
+.sec-2 h3 {
+    text-align: center;
+    align-items: center;
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+.sec-2 h2 {
+    text-align: center;
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+
+.sec-2 p {
+    margin-top: 20px;
+    text-align: center;
+    font-size: .7rem;
+}
+
+.sec-2 .service-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    float: right;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+
+.sec-2 .service-box .services {
+    width: 17rem;
+    height: 250px;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow: 1px 1px 1px 1px black;
+    gap: 1rem;
+}
+
+
+.sec-2 .service-box .services button {
+    padding: 8px 20px;
+    border-radius: 10px;
+    background-color: #00306e;
+    color: white;
+    margin-top: 20px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+/*--------------------------services--end---------------------*/
+
+.sec-3 img{
+    margin-top: 20px;
+    width: 100%;
+}
+
+/*----------------------- placement---------------------*/
+
+.placement img {
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* --------------------que-ans--Start----------------------------- */
+
+
+.que-ans {
+    padding: 20px 100px;
+}
+
+.que-ans h3 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.que-ans .que {
+    margin-top: 20px;
+}
+
+.que-ans .que summary {
+    margin-top: 15px;
+    list-style: none;
+    padding: 12px;
+    outline: none;
+    color: #2e5b95;
+    background-color: #E7F1FF;
+    border: .5px solid rgb(229, 229, 229);
+
+
+}
+
+.que-ans .que details {
+    background-color: white;
+    text-align: justify;
+
+
+
+}
+
+/* --------------------que-ans--end----------------------------- */
+
+
+
+/* --------------------footer--Start----------------------------- */
+
+footer {
+    background-color: #00306e;
+    color: white;
+    display: flex;
+    padding: 20px;
+}
+
+footer .footer-item .foot-1,
+.foot-2,
+.foot-3 {
+    width: 25%;
+    text-align: center;
+}
+
+footer h2 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+footer .footer-item a {
+    cursor: pointer;
+    display: block;
+    color: white;
+    margin: 20px 30px;
+    text-transform: capitalize;
+}
+
+footer .footer-item {
+    width: 100%;
+    display: flex;
+}
+
+footer .footer-item .foot-1 {
+    padding: 0px 20px;
+}
+
+footer .footer-item .foot-1 img {
+    width: 120px;
+    height: 60px;
+}
+
+
+/*-------------------------foot-3--------------------------- */
+footer .foot-3 {
+    justify-content: center;
+    text-align: center;
+    padding: 0px 20px;
+}
+
+footer .foot-3 p {
+    font-size: 1rem;
+}
+
+footer .foot-3 iframe {
+    display: flex;
+    width: 95%;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+/*----------------footer--courses---------------*/
+.footer-courses {
+    color: white;
+    padding: 20px;
+    background-color: #2e5b95;
+    text-align: center;
+}
+
+.footer-courses .courses-name {
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.footer-courses .courses-name a {
+    font-size: .8rem;
+    color: white;
+
+}
+
+
+.copyright {
+    background-color: #00306e;
+    color: white;
+    text-align: center;
+    padding: 20px 0px;
+    text-transform: capitalize;
+}
+
+
+/* --------------------footer--End----------------------------- */
